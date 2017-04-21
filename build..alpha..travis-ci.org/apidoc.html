@@ -1,0 +1,3257 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/practicalmeteor/spacejam"
+
+    >spacejam (v1.6.1)</a>
+</h1>
+<h4>Run your meteor package tinytests and mocha tests from the command line with phantomjs.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam">module spacejam</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.CLI">
+            function <span class="apidocSignatureSpan">spacejam.</span>CLI
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.ChildProcess">
+            function <span class="apidocSignatureSpan">spacejam.</span>ChildProcess
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor">
+            function <span class="apidocSignatureSpan">spacejam.</span>Meteor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb">
+            function <span class="apidocSignatureSpan">spacejam.</span>MeteorMongodb
+            <span class="apidocSignatureSpan">(meteorPid)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Phantomjs">
+            function <span class="apidocSignatureSpan">spacejam.</span>Phantomjs
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam">
+            function <span class="apidocSignatureSpan">spacejam.</span>Spacejam
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.XunitFilePipe">
+            function <span class="apidocSignatureSpan">spacejam.</span>XunitFilePipe
+            <span class="apidocSignatureSpan">(stdout, stderr, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.</span>CLI.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.</span>ChildProcess.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.</span>Meteor.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.</span>MeteorMongodb.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.</span>Phantomjs.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.</span>Spacejam.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.</span>XunitFilePipe.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.CLI">module spacejam.CLI</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.CLI.CLI">
+            function <span class="apidocSignatureSpan">spacejam.</span>CLI
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.CLI.get">
+            function <span class="apidocSignatureSpan">spacejam.CLI.</span>get
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.CLI.prototype">module spacejam.CLI.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.CLI.prototype.exec">
+            function <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>exec
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.CLI.prototype.onProcessExit">
+            function <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>onProcessExit
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.CLI.prototype.printHelp">
+            function <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>printHelp
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>commands</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>pidPath</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>spacejam</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.ChildProcess">module spacejam.ChildProcess</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.ChildProcess.ChildProcess">
+            function <span class="apidocSignatureSpan">spacejam.</span>ChildProcess
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.ChildProcess._exec">
+            function <span class="apidocSignatureSpan">spacejam.ChildProcess.</span>_exec
+            <span class="apidocSignatureSpan">(command)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.ChildProcess._spawn">
+            function <span class="apidocSignatureSpan">spacejam.ChildProcess.</span>_spawn
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.ChildProcess.prototype">module spacejam.ChildProcess.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>killed</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.ChildProcess.prototype.exec">
+            function <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>exec
+            <span class="apidocSignatureSpan">(command, options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.ChildProcess.prototype.kill">
+            function <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>kill
+            <span class="apidocSignatureSpan">(signal)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.ChildProcess.prototype.spawn">
+            function <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>spawn
+            <span class="apidocSignatureSpan">(command, args, options, pipeClass, pipeClassOptions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>child</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>command</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>descendants</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>pipe</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.Meteor">module spacejam.Meteor</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">spacejam.Meteor.</span>usingDomains</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.Meteor">
+            function <span class="apidocSignatureSpan">spacejam.</span>Meteor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.EventEmitter">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.</span>EventEmitter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.getPackageVersion">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.</span>getPackageVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.init">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.listenerCount">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.</span>listenerCount
+            <span class="apidocSignatureSpan">(emitter, type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">spacejam.Meteor.</span>defaultMaxListeners</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Meteor.</span>__super__</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.Meteor.prototype">module spacejam.Meteor.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype._globPackages">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>_globPackages
+            <span class="apidocSignatureSpan">(packages)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.constructor">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>constructor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.defaultOptions">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>defaultOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.getTestArgs">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>getTestArgs
+            <span class="apidocSignatureSpan">(command, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.hasErrorText">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>hasErrorText
+            <span class="apidocSignatureSpan">(buffer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.hasMongodb">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>hasMongodb
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.hasReadyText">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>hasReadyText
+            <span class="apidocSignatureSpan">(buffer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.hasStartedMongoDBText">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>hasStartedMongoDBText
+            <span class="apidocSignatureSpan">(buffer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.kill">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>kill
+            <span class="apidocSignatureSpan">(signal)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.runTestCommand">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>runTestCommand
+            <span class="apidocSignatureSpan">(command, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.testApp">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>testApp
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Meteor.prototype.testPackages">
+            function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>testPackages
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>buffer</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>childProcess</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>mongodb</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>options</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.MeteorMongodb">module spacejam.MeteorMongodb</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>usingDomains</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb.MeteorMongodb">
+            function <span class="apidocSignatureSpan">spacejam.</span>MeteorMongodb
+            <span class="apidocSignatureSpan">(meteorPid)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb.EventEmitter">
+            function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>EventEmitter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb.init">
+            function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb.listenerCount">
+            function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>listenerCount
+            <span class="apidocSignatureSpan">(emitter, type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>defaultMaxListeners</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>__super__</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.MeteorMongodb.prototype">module spacejam.MeteorMongodb.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>killed</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb.prototype.constructor">
+            function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(meteorPid)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb.prototype.findAllChildren">
+            function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>findAllChildren
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb.prototype.hasMongodb">
+            function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>hasMongodb
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.MeteorMongodb.prototype.kill">
+            function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>kill
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>mongodChilds</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.Phantomjs">module spacejam.Phantomjs</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>usingDomains</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Phantomjs.Phantomjs">
+            function <span class="apidocSignatureSpan">spacejam.</span>Phantomjs
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Phantomjs.EventEmitter">
+            function <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>EventEmitter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Phantomjs.init">
+            function <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Phantomjs.listenerCount">
+            function <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>listenerCount
+            <span class="apidocSignatureSpan">(emitter, type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>defaultMaxListeners</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>__super__</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.Phantomjs.prototype">module spacejam.Phantomjs.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Phantomjs.prototype.constructor">
+            function <span class="apidocSignatureSpan">spacejam.Phantomjs.prototype.</span>constructor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Phantomjs.prototype.kill">
+            function <span class="apidocSignatureSpan">spacejam.Phantomjs.prototype.</span>kill
+            <span class="apidocSignatureSpan">(signal)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Phantomjs.prototype.run">
+            function <span class="apidocSignatureSpan">spacejam.Phantomjs.prototype.</span>run
+            <span class="apidocSignatureSpan">(url, options, script, pipeClass, pipeClassOptions, useSystemPhantomjs)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Phantomjs.prototype.</span>childProcess</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.Spacejam">module spacejam.Spacejam</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">spacejam.Spacejam.</span>usingDomains</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.Spacejam">
+            function <span class="apidocSignatureSpan">spacejam.</span>Spacejam
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.EventEmitter">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.</span>EventEmitter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.get">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.</span>get
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.init">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.listenerCount">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.</span>listenerCount
+            <span class="apidocSignatureSpan">(emitter, type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">spacejam.Spacejam.</span>defaultMaxListeners</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Spacejam.</span>DONE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Spacejam.</span>DONE_MESSAGE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Spacejam.</span>__super__</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.Spacejam.prototype">module spacejam.Spacejam.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>childrenKilled</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>waitForMeteorMongodbKillDone</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.prototype.constructor">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>constructor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.prototype.defaultOptions">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>defaultOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.prototype.done">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>done
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.prototype.killChildren">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>killChildren
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.prototype.onMeteorMongodbKillDone">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>onMeteorMongodbKillDone
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.prototype.runPhantom">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>runPhantom
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.Spacejam.prototype.runTests">
+            function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>runTests
+            <span class="apidocSignatureSpan">(command, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>doneCode</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>meteor</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>phantomjs</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.XunitFilePipe">module spacejam.XunitFilePipe</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.XunitFilePipe.XunitFilePipe">
+            function <span class="apidocSignatureSpan">spacejam.</span>XunitFilePipe
+            <span class="apidocSignatureSpan">(stdout, stderr, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spacejam.XunitFilePipe.</span>__super__</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spacejam.XunitFilePipe.prototype">module spacejam.XunitFilePipe.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spacejam.XunitFilePipe.prototype.constructor">
+            function <span class="apidocSignatureSpan">spacejam.XunitFilePipe.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(stdout, stderr, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam" id="apidoc.module.spacejam">module spacejam</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.CLI" id="apidoc.element.spacejam.CLI">
+        function <span class="apidocSignatureSpan">spacejam.</span>CLI
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLI() {
+  this.onProcessExit = __bind(this.onProcessExit, this);
+  this.spacejam = new Spacejam();
+  log.debug(&#x22;CLI.constructor()&#x22;);
+  process.on(&#x27;SIGPIPE&#x27;, (function(_this) {
+    return function(code) {
+      var _ref;
+      log.info(&#x22;spacejam: Received a SIGPIPE signal. Killing all child processes...&#x22;);
+      return (_ref = _this.spacejam) != null ? _ref.killChildren() : void 0;
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.ChildProcess" id="apidoc.element.spacejam.ChildProcess">
+        function <span class="apidocSignatureSpan">spacejam.</span>ChildProcess
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ChildProcess() {
+  log.debug(&#x22;ChildProcess.constructor()&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor" id="apidoc.element.spacejam.Meteor">
+        function <span class="apidocSignatureSpan">spacejam.</span>Meteor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Meteor() {
+  this.hasReadyText = __bind(this.hasReadyText, this);
+  this.hasErrorText = __bind(this.hasErrorText, this);
+  this.hasStartedMongoDBText = __bind(this.hasStartedMongoDBText, this);
+  this.runTestCommand = __bind(this.runTestCommand, this);
+  return Meteor.__super__.constructor.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb" id="apidoc.element.spacejam.MeteorMongodb">
+        function <span class="apidocSignatureSpan">spacejam.</span>MeteorMongodb
+        <span class="apidocSignatureSpan">(meteorPid)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MeteorMongodb(meteorPid) {
+  this.meteorPid = meteorPid;
+  log.debug(&#x22;MeteorMongodb.constructor()&#x22;, arguments);
+  process.on(&#x27;exit&#x27;, (function(_this) {
+    return function(code) {
+      log.debug(&#x22;MeteorMongodb.process.on &#x27;exit&#x27;: code=&#x22; + code);
+      return _this.kill();
+    };
+  })(this));
+  this.findAllChildren();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Phantomjs" id="apidoc.element.spacejam.Phantomjs">
+        function <span class="apidocSignatureSpan">spacejam.</span>Phantomjs
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Phantomjs() {
+  this.run = __bind(this.run, this);
+  return Phantomjs.__super__.constructor.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam" id="apidoc.element.spacejam.Spacejam">
+        function <span class="apidocSignatureSpan">spacejam.</span>Spacejam
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Spacejam() {
+  this.onMeteorMongodbKillDone = __bind(this.onMeteorMongodbKillDone, this);
+  log.debug(&#x22;Spacejam.constructor()&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.XunitFilePipe" id="apidoc.element.spacejam.XunitFilePipe">
+        function <span class="apidocSignatureSpan">spacejam.</span>XunitFilePipe
+        <span class="apidocSignatureSpan">(stdout, stderr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function XunitFilePipe(stdout, stderr, options) {
+  var outputFile, outputStream;
+  this.stdout = stdout;
+  this.stderr = stderr;
+  this.options = options;
+  this.stdout.setEncoding(&#x22;utf8&#x22;);
+  this.stderr.setEncoding(&#x22;utf8&#x22;);
+  outputFile = this.options.pipeToFile;
+  outputStream = fs.createWriteStream(outputFile, {
+    flags: &#x27;w&#x27;,
+    encoding: &#x27;utf8&#x27;
+  });
+  this.stdoutBuffer = &#x27;&#x27;;
+  this.stdout.on(&#x22;data&#x22;, (function(_this) {
+    return function(data) {
+      var line, lines, _i, _len, _results;
+      _this.stdoutBuffer += data;
+      lines = _this.stdoutBuffer.split(&#x27;\n&#x27;);
+      if (lines.length === 1) {
+        return;
+      }
+      _this.stdoutBuffer = lines.pop();
+      _results = [];
+      for (_i = 0, _len = lines.length; _i &#x3c; _len; _i++) {
+        line = lines[_i];
+        if (line.indexOf(&#x27;##_meteor_magic##xunit: &#x27;) === 0) {
+          _results.push(outputStream.write(line.substr(24) + &#x27;\n&#x27;));
+        } else {
+          _results.push(process.stdout.write(line + &#x27;\n&#x27;));
+        }
+      }
+      return _results;
+    };
+  })(this));
+  this.stderr.on(&#x22;data&#x22;, (function(_this) {
+    return function(data) {
+      return process.stderr.write(data);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.CLI" id="apidoc.module.spacejam.CLI">module spacejam.CLI</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.CLI.CLI" id="apidoc.element.spacejam.CLI.CLI">
+        function <span class="apidocSignatureSpan">spacejam.</span>CLI
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLI() {
+  this.onProcessExit = __bind(this.onProcessExit, this);
+  this.spacejam = new Spacejam();
+  log.debug(&#x22;CLI.constructor()&#x22;);
+  process.on(&#x27;SIGPIPE&#x27;, (function(_this) {
+    return function(code) {
+      var _ref;
+      log.info(&#x22;spacejam: Received a SIGPIPE signal. Killing all child processes...&#x22;);
+      return (_ref = _this.spacejam) != null ? _ref.killChildren() : void 0;
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.CLI.get" id="apidoc.element.spacejam.CLI.get">
+        function <span class="apidocSignatureSpan">spacejam.CLI.</span>get
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function () {
+  return instance != null ? instance : instance = new CLI();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.CLI.prototype" id="apidoc.module.spacejam.CLI.prototype">module spacejam.CLI.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.CLI.prototype.exec" id="apidoc.element.spacejam.CLI.prototype.exec">
+        function <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>exec
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exec = function () {
+  var command, err, version;
+  log.debug(&#x22;CLI.exec()&#x22;);
+  expect(this.options, &#x22;You can only call CLI.exec() once&#x22;).to.be[&#x22;null&#x22;];
+  this.options = require(&#x22;rc&#x22;)(&#x22;spacejam&#x22;, {});
+  command = this.options._[0];
+  log.debug(&#x22;command: &#x22; + command);
+  if (command === &#x27;help&#x27;) {
+    this.printHelp();
+    process.exit(0);
+  } else if (command === &#x27;package-version&#x27;) {
+    version = Meteor.getPackageVersion();
+    console.log(version);
+    process.exit(0);
+  }
+  if (!_.has(this.commands, command)) {
+    if (command) {
+      log.error(&#x22;spacejam: Error: \n&#x27;&#x22; + command + &#x22;&#x27; is not a recognized command\n&#x22;);
+    }
+    return this.printHelp();
+  }
+  this.options.packages = this.options._.slice(1);
+  this.options.command = command;
+  delete this.options._;
+  log.debug(&#x22;CLI.exec() options:&#x22;, this.options);
+  this.spacejam.on(&#x27;done&#x27;, (function(_this) {
+    return function(code) {
+      var exitMsg;
+      if (Spacejam.DONE_MESSAGE[code] != null) {
+        exitMsg = &#x22;spacejam: &#x22; + Spacejam.DONE_MESSAGE[code] + &#x22;. Exiting.&#x22;;
+      } else {
+        exitMsg = &#x22;spacejam: Unknown error with exit code &#x27;&#x22; + code + &#x22;&#x27;. Exiting.&#x22;;
+      }
+      log.error(exitMsg);
+      return process.exit(code);
+    };
+  })(this));
+  try {
+    return this.spacejam.runTests(command, this.options);
+  } catch (_error) {
+    err = _error;
+    console.trace(err);
+    log.error(&#x22;spacejam: Usage or initialization error. Exiting.&#x22;);
+    return process.exit(1);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function ChildProcess() {
+  log.debug(&#x22;ChildProcess.constructor()&#x22;);
+}
+
+ChildProcess.prototype.exec = function(command, options, cb) {
+  var innerCB;
+  log.debug(&#x22;ChildProcess.<span class="apidocCodeKeywordSpan">exec</span>()&#x22;, arguments);
+  expect(this.child).to.be[&#x22;null&#x22;];
+  expect(command).to.be.a(&#x27;string&#x27;).that.is.ok;
+  if (options != null) {
+    expect(options).to.be.an(&#x27;object&#x27;);
+  }
+  this.command = command.split(&#x27; &#x27;, 1)[0];
+  expect(this.command).to.be.a(&#x27;string&#x27;).that.is.ok;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.CLI.prototype.onProcessExit" id="apidoc.element.spacejam.CLI.prototype.onProcessExit">
+        function <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>onProcessExit
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onProcessExit = function (code) {
+  var err;
+  log.info(&#x22;spacejam: spacejam is exiting with code &#x22; + code + &#x22;, deleting pid file.&#x22;);
+  try {
+    return fs.unlinkSync(this.pidPath);
+  } catch (_error) {
+    err = _error;
+    log.trace(err);
+    return log.error(&#x22;spacejam: Error deleting pid file &#x22; + this.pidPath, err);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.CLI.prototype.printHelp" id="apidoc.element.spacejam.CLI.prototype.printHelp">
+        function <span class="apidocSignatureSpan">spacejam.CLI.prototype.</span>printHelp
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">printHelp = function () {
+  log.debug(&#x22;CLI.printHelp()&#x22;);
+  return process.stdout.write(require(&#x27;../bin/help.txt&#x27;));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var command, err, version;
+log.debug(&#x22;CLI.exec()&#x22;);
+expect(this.options, &#x22;You can only call CLI.exec() once&#x22;).to.be[&#x22;null&#x22;];
+this.options = require(&#x22;rc&#x22;)(&#x22;spacejam&#x22;, {});
+command = this.options._[0];
+log.debug(&#x22;command: &#x22; + command);
+if (command === &#x27;help&#x27;) {
+  this.<span class="apidocCodeKeywordSpan">printHelp</span>();
+  process.exit(0);
+} else if (command === &#x27;package-version&#x27;) {
+  version = Meteor.getPackageVersion();
+  console.log(version);
+  process.exit(0);
+}
+if (!_.has(this.commands, command)) {
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.ChildProcess" id="apidoc.module.spacejam.ChildProcess">module spacejam.ChildProcess</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.ChildProcess.ChildProcess" id="apidoc.element.spacejam.ChildProcess.ChildProcess">
+        function <span class="apidocSignatureSpan">spacejam.</span>ChildProcess
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ChildProcess() {
+  log.debug(&#x22;ChildProcess.constructor()&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.ChildProcess._exec" id="apidoc.element.spacejam.ChildProcess._exec">
+        function <span class="apidocSignatureSpan">spacejam.ChildProcess.</span>_exec
+        <span class="apidocSignatureSpan">(command)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_exec = function (command) {
+  var opts = normalizeExecArgs.apply(null, arguments);
+  return exports.execFile(opts.file,
+                          opts.options,
+                          opts.callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      }
+      if (cb != null) {
+        return cb(err, stdout, stderr);
+      }
+    };
+  })(this);
+  if (options != null) {
+    this.child = ChildProcess.<span class="apidocCodeKeywordSpan">_exec</span>(command, options, innerCB);
+  } else {
+    this.child = ChildProcess._exec(command, innerCB);
+  }
+  this.child.stdout.pipe(process.stdout);
+  return this.child.stderr.pipe(process.stderr);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.ChildProcess._spawn" id="apidoc.element.spacejam.ChildProcess._spawn">
+        function <span class="apidocSignatureSpan">spacejam.ChildProcess.</span>_spawn
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_spawn = function () {
+  var opts = normalizeSpawnArguments.apply(null, arguments);
+  var options = opts.options;
+  var child = new ChildProcess();
+
+  debug(&#x27;spawn&#x27;, opts.args, options);
+
+  child.spawn({
+    file: opts.file,
+    args: opts.args,
+    cwd: options.cwd,
+    windowsVerbatimArguments: !!options.windowsVerbatimArguments,
+    detached: !!options.detached,
+    envPairs: opts.envPairs,
+    stdio: options.stdio,
+    uid: options.uid,
+    gid: options.gid
+  });
+
+  return child;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+log.info(&#x22;spacejam: spawning &#x22; + this.command);
+process.on(&#x27;exit&#x27;, (function(_this) {
+  return function(code) {
+    log.debug(&#x22;ChildProcess.process.on &#x27;exit&#x27;: @command=&#x22; + _this.command + &#x22; @killed=&#x22; + _this.killed
+ + &#x22; code=&#x22; + code);
+    return _this.kill();
+  };
+})(this));
+this.child = ChildProcess.<span class="apidocCodeKeywordSpan">_spawn</span>(command, args, options);
+if (pipeClass) {
+  this.pipe = new pipeClass(this.child.stdout, this.child.stderr, pipeClassOptions);
+} else {
+  this.pipe = new Pipe(this.child.stdout, this.child.stderr);
+}
+return this.child.on(&#x22;exit&#x22;, (function(_this) {
+  return function(code, signal) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.ChildProcess.prototype" id="apidoc.module.spacejam.ChildProcess.prototype">module spacejam.ChildProcess.prototype</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.ChildProcess.prototype.exec" id="apidoc.element.spacejam.ChildProcess.prototype.exec">
+        function <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>exec
+        <span class="apidocSignatureSpan">(command, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exec = function (command, options, cb) {
+  var innerCB;
+  log.debug(&#x22;ChildProcess.exec()&#x22;, arguments);
+  expect(this.child).to.be[&#x22;null&#x22;];
+  expect(command).to.be.a(&#x27;string&#x27;).that.is.ok;
+  if (options != null) {
+    expect(options).to.be.an(&#x27;object&#x27;);
+  }
+  this.command = command.split(&#x27; &#x27;, 1)[0];
+  expect(this.command).to.be.a(&#x27;string&#x27;).that.is.ok;
+  innerCB = (function(_this) {
+    return function(err, stdout, stderr) {
+      _this.killed = true;
+      if ((err != null ? err.code : void 0) != null) {
+        log.error(&#x22;child_process.exec: Error: &#x22; + _this.command + &#x22; exit code: &#x22; + err.code);
+      }
+      if ((err != null ? err.signal : void 0) != null) {
+        log.error(&#x22;child_process.exec: Error: &#x22; + _this.command + &#x22; termination signal: &#x22; + err.signal);
+      }
+      if (cb != null) {
+        return cb(err, stdout, stderr);
+      }
+    };
+  })(this);
+  if (options != null) {
+    this.child = ChildProcess._exec(command, options, innerCB);
+  } else {
+    this.child = ChildProcess._exec(command, innerCB);
+  }
+  this.child.stdout.pipe(process.stdout);
+  return this.child.stderr.pipe(process.stderr);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function ChildProcess() {
+  log.debug(&#x22;ChildProcess.constructor()&#x22;);
+}
+
+ChildProcess.prototype.exec = function(command, options, cb) {
+  var innerCB;
+  log.debug(&#x22;ChildProcess.<span class="apidocCodeKeywordSpan">exec</span>()&#x22;, arguments);
+  expect(this.child).to.be[&#x22;null&#x22;];
+  expect(command).to.be.a(&#x27;string&#x27;).that.is.ok;
+  if (options != null) {
+    expect(options).to.be.an(&#x27;object&#x27;);
+  }
+  this.command = command.split(&#x27; &#x27;, 1)[0];
+  expect(this.command).to.be.a(&#x27;string&#x27;).that.is.ok;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.ChildProcess.prototype.kill" id="apidoc.element.spacejam.ChildProcess.prototype.kill">
+        function <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>kill
+        <span class="apidocSignatureSpan">(signal)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">kill = function (signal) {
+  var err, _ref;
+  if (signal == null) {
+    signal = &#x22;SIGTERM&#x22;;
+  }
+  log.debug(&#x22;ChildProcess.kill() signal=&#x22; + signal + &#x22; @command=&#x22; + this.command + &#x22; @killed=&#x22; + this.killed);
+  if (this.killed) {
+    return;
+  }
+  log.info(&#x22;spacejam: killing&#x22;, this.command);
+  this.killed = true;
+  try {
+    return (_ref = this.child) != null ? _ref.kill(signal) : void 0;
+  } catch (_error) {
+    err = _error;
+    return log.warn(&#x22;spacejam: Error: While killing &#x22; + this.command + &#x22; with pid &#x22; + this.child.pid + &#x22;:\n&#x22;, err);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  expect(pipeClassOptions, &#x22;Invalid pipeClassOptions&#x22;).to.be.an(&#x27;object&#x27;);
+}
+this.command = path.basename(command);
+log.info(&#x22;spacejam: spawning &#x22; + this.command);
+process.on(&#x27;exit&#x27;, (function(_this) {
+  return function(code) {
+    log.debug(&#x22;ChildProcess.process.on &#x27;exit&#x27;: @command=&#x22; + _this.command + &#x22; @killed=&#x22; + _this.killed
+ + &#x22; code=&#x22; + code);
+    return _this.<span class="apidocCodeKeywordSpan">kill</span>();
+  };
+})(this));
+this.child = ChildProcess._spawn(command, args, options);
+if (pipeClass) {
+  this.pipe = new pipeClass(this.child.stdout, this.child.stderr, pipeClassOptions);
+} else {
+  this.pipe = new Pipe(this.child.stdout, this.child.stderr);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.ChildProcess.prototype.spawn" id="apidoc.element.spacejam.ChildProcess.prototype.spawn">
+        function <span class="apidocSignatureSpan">spacejam.ChildProcess.prototype.</span>spawn
+        <span class="apidocSignatureSpan">(command, args, options, pipeClass, pipeClassOptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">spawn = function (command, args, options, pipeClass, pipeClassOptions) {
+  if (args == null) {
+    args = [];
+  }
+  if (options == null) {
+    options = {};
+  }
+  if (pipeClass == null) {
+    pipeClass = void 0;
+  }
+  if (pipeClassOptions == null) {
+    pipeClassOptions = void 0;
+  }
+  log.debug(&#x22;ChildProcess.spawn()&#x22;, command, args);
+  expect(this.child, &#x22;ChildProcess is already running&#x22;).to.be[&#x22;null&#x22;];
+  expect(command, &#x22;Invalid @command argument&#x22;).to.be.a(&#x22;string&#x22;);
+  expect(args, &#x22;Invalid @args argument&#x22;).to.be.an(&#x22;array&#x22;);
+  expect(options, &#x22;Invalid @options&#x22;).to.be.an(&#x22;object&#x22;);
+  if (pipeClass != null) {
+    expect(pipeClass, &#x22;Invalid pipeClass&#x22;).to.be.a(&#x27;function&#x27;);
+  }
+  if (pipeClassOptions != null) {
+    expect(pipeClassOptions, &#x22;Invalid pipeClassOptions&#x22;).to.be.an(&#x27;object&#x27;);
+  }
+  this.command = path.basename(command);
+  log.info(&#x22;spacejam: spawning &#x22; + this.command);
+  process.on(&#x27;exit&#x27;, (function(_this) {
+    return function(code) {
+      log.debug(&#x22;ChildProcess.process.on &#x27;exit&#x27;: @command=&#x22; + _this.command + &#x22; @killed=&#x22; + _this.killed + &#x22; code=&#x22; + code);
+      return _this.kill();
+    };
+  })(this));
+  this.child = ChildProcess._spawn(command, args, options);
+  if (pipeClass) {
+    this.pipe = new pipeClass(this.child.stdout, this.child.stderr, pipeClassOptions);
+  } else {
+    this.pipe = new Pipe(this.child.stdout, this.child.stderr);
+  }
+  return this.child.on(&#x22;exit&#x22;, (function(_this) {
+    return function(code, signal) {
+      log.debug(&#x22;ChildProcess.process.on &#x27;exit&#x27;: @command=&#x22; + _this.command + &#x22; @killed=&#x22; + _this.killed + &#x22; code=&#x22; + code + &#x22; signal
+=&#x22; + signal);
+      _this.killed = true;
+      if (code != null) {
+        return log.info(&#x22;spacejam: &#x22; + command + &#x22; exited with code: &#x22; + code);
+      } else if (signal != null) {
+        return log.info(&#x22;spacejam: &#x22; + command + &#x22; killed with signal: &#x22; + signal);
+      } else {
+        return log.error(&#x22;spacejam: &#x22; + command + &#x22; exited with arguments: &#x22; + arguments);
+      }
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+if (pipeClass == null) {
+  pipeClass = void 0;
+}
+if (pipeClassOptions == null) {
+  pipeClassOptions = void 0;
+}
+log.debug(&#x22;ChildProcess.<span class="apidocCodeKeywordSpan">spawn</span>()&#x22;, command, args);
+expect(this.child, &#x22;ChildProcess is already running&#x22;).to.be[&#x22;null&#x22;];
+expect(command, &#x22;Invalid @command argument&#x22;).to.be.a(&#x22;string&#x22;);
+expect(args, &#x22;Invalid @args argument&#x22;).to.be.an(&#x22;array&#x22;);
+expect(options, &#x22;Invalid @options&#x22;).to.be.an(&#x22;object&#x22;);
+if (pipeClass != null) {
+  expect(pipeClass, &#x22;Invalid pipeClass&#x22;).to.be.a(&#x27;function&#x27;);
+}
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.Meteor" id="apidoc.module.spacejam.Meteor">module spacejam.Meteor</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.Meteor" id="apidoc.element.spacejam.Meteor.Meteor">
+        function <span class="apidocSignatureSpan">spacejam.</span>Meteor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Meteor() {
+  this.hasReadyText = __bind(this.hasReadyText, this);
+  this.hasErrorText = __bind(this.hasErrorText, this);
+  this.hasStartedMongoDBText = __bind(this.hasStartedMongoDBText, this);
+  this.runTestCommand = __bind(this.runTestCommand, this);
+  return Meteor.__super__.constructor.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.EventEmitter" id="apidoc.element.spacejam.Meteor.EventEmitter">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.</span>EventEmitter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.getPackageVersion" id="apidoc.element.spacejam.Meteor.getPackageVersion">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.</span>getPackageVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPackageVersion = function () {
+  var _ref;
+  log.debug(&#x22;Meteor.getPackageVersion()&#x22;);
+  if (!fs.existsSync(&#x27;package.js&#x27;)) {
+    throw new Error(&#x22;Missing package.js in current working directory.&#x22;);
+  }
+  require(&#x27;./PackageJSStubs&#x27;);
+  require(&#x22;&#x22; + (process.cwd()) + &#x22;/package.js&#x22;);
+  expect((_ref = Package.description) != null ? _ref.version : void 0).to.be.a(&#x27;string&#x27;).that.is.ok;
+  return Package.description.version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this.options = require(&#x22;rc&#x22;)(&#x22;spacejam&#x22;, {});
+command = this.options._[0];
+log.debug(&#x22;command: &#x22; + command);
+if (command === &#x27;help&#x27;) {
+  this.printHelp();
+  process.exit(0);
+} else if (command === &#x27;package-version&#x27;) {
+  version = Meteor.<span class="apidocCodeKeywordSpan">getPackageVersion</span>();
+  console.log(version);
+  process.exit(0);
+}
+if (!_.has(this.commands, command)) {
+  if (command) {
+    log.error(&#x22;spacejam: Error: \n&#x27;&#x22; + command + &#x22;&#x27; is not a recognized command\n&#x22;);
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.init" id="apidoc.element.spacejam.Meteor.init">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this.domain = null;
+  if (EventEmitter.usingDomains) {
+    // if there is an active domain, then attach to it.
+    domain = domain || require(&#x27;domain&#x27;);
+    if (domain.active &#x26;&#x26; !(this instanceof domain.Domain)) {
+      this.domain = domain.active;
+    }
+  }
+
+  if (!this._events || this._events === Object.getPrototypeOf(this)._events) {
+    this._events = new EventHandlers();
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.listenerCount" id="apidoc.element.spacejam.Meteor.listenerCount">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.</span>listenerCount
+        <span class="apidocSignatureSpan">(emitter, type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listenerCount = function (emitter, type) {
+  if (typeof emitter.listenerCount === &#x27;function&#x27;) {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.Meteor.prototype" id="apidoc.module.spacejam.Meteor.prototype">module spacejam.Meteor.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype._globPackages" id="apidoc.element.spacejam.Meteor.prototype._globPackages">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>_globPackages
+        <span class="apidocSignatureSpan">(packages)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_globPackages = function (packages) {
+  var globOpts, matchedPackages, pkgsFolder;
+  log.debug(&#x22;Meteor._globPackages()&#x22;, arguments);
+  expect(packages, &#x22;@packages should be and array&#x22;).to.be.an(&#x22;array&#x22;);
+  pkgsFolder = process.cwd() + &#x27;/packages&#x27;;
+  globOpts = {
+    cwd: pkgsFolder
+  };
+  matchedPackages = [];
+  packages.forEach((function(_this) {
+    return function(pkgArg) {
+      var globedPackages;
+      if (pkgArg.indexOf(&#x27;:&#x27;) &#x3e; 0) {
+        return matchedPackages.push(pkgArg);
+      } else if (pkgArg.indexOf(&#x27;/&#x27;) &#x3e;= 0) {
+        return matchedPackages.push(pkgArg);
+      } else {
+        globedPackages = glob.sync(pkgArg, globOpts);
+        if (globedPackages.length &#x3e; 0) {
+          return globedPackages.forEach(function(pkg) {
+            return matchedPackages.push(pkg);
+          });
+        } else {
+          log.warn(&#x22;spacjam: Warning: No packages matching &#x22; + pkgArg + &#x22; have been found. Will add it to the meteor command line
+ anyway, in case it&#x27;s in PACKAGE_DIRS.&#x22;);
+          return matchedPackages.push(pkgArg);
+        }
+      }
+    };
+  })(this));
+  return matchedPackages;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.constructor" id="apidoc.element.spacejam.Meteor.prototype.constructor">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>constructor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Meteor() {
+  this.hasReadyText = __bind(this.hasReadyText, this);
+  this.hasErrorText = __bind(this.hasErrorText, this);
+  this.hasStartedMongoDBText = __bind(this.hasStartedMongoDBText, this);
+  this.runTestCommand = __bind(this.runTestCommand, this);
+  return Meteor.__super__.constructor.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ChildProcess.prototype.pipe = null;
+
+ChildProcess.prototype.command = null;
+
+ChildProcess.prototype.killed = false;
+
+function ChildProcess() {
+  log.debug(&#x22;ChildProcess.<span class="apidocCodeKeywordSpan">constructor</span>()&#x22;);
+}
+
+ChildProcess.prototype.exec = function(command, options, cb) {
+  var innerCB;
+  log.debug(&#x22;ChildProcess.exec()&#x22;, arguments);
+  expect(this.child).to.be[&#x22;null&#x22;];
+  expect(command).to.be.a(&#x27;string&#x27;).that.is.ok;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.defaultOptions" id="apidoc.element.spacejam.Meteor.prototype.defaultOptions">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>defaultOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultOptions = function () {
+  return {
+    &#x22;dir&#x22;: &#x22;.&#x22;,
+    &#x22;port&#x22;: 4096,
+    &#x22;packages&#x22;: [],
+    &#x22;driver-package&#x22;: &#x22;test-in-console&#x22;,
+    &#x22;meteor-ready-text&#x22;: &#x22;=&#x3e; App running at:&#x22;,
+    &#x22;meteor-error-text&#x22;: &#x22;Waiting for file change.&#x22;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.getTestArgs" id="apidoc.element.spacejam.Meteor.prototype.getTestArgs">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>getTestArgs
+        <span class="apidocSignatureSpan">(command, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTestArgs = function (command, options) {
+  var args, packagesToTest;
+  log.debug(&#x22;Meteor.getTestArgs()&#x22;, options);
+  expect(+options.port, &#x22;options.port is not a number.&#x22;).to.be.ok;
+  expect(options.packages, &#x22;options.packages is not an array of package names&#x22;).to.be.an(&#x27;array&#x27;);
+  args = [command, &#x27;--driver-package&#x27;, options[&#x27;driver-package&#x27;]];
+  if (options.release) {
+    args.push([&#x22;--release&#x22;, options.release]);
+  }
+  args.push([&#x22;--port&#x22;, options.port]);
+  if (options.settings) {
+    args.push([&#x22;--settings&#x22;, options.settings]);
+  }
+  if (options.production) {
+    args.push(&#x22;--production&#x22;);
+  }
+  if (options.mocha != null) {
+    options[&#x22;driver-package&#x22;] = &#x22;practicalmeteor:mocha-console-runner&#x22;;
+  }
+  if (options[&#x22;root-url&#x22;] == null) {
+    options[&#x22;root-url&#x22;] = &#x22;http://localhost:&#x22; + options.port + &#x22;/&#x22;;
+  }
+  if (command === &#x27;test&#x27;) {
+    if (options[&#x22;test-app-path&#x22;]) {
+      args.push([&#x27;--test-app-path&#x27;], options[&#x22;test-app-path&#x22;]);
+    }
+    if (options[&#x22;full-app&#x22;]) {
+      args.push([&#x27;--full-app&#x27;]);
+    }
+  } else if (command === &#x27;test-packages&#x27;) {
+    if (options.packages.length &#x3e; 0) {
+      packagesToTest = this._globPackages(options.packages);
+      expect(packagesToTest).to.have.length.above(0);
+      args.push(packagesToTest);
+    }
+  }
+  return _.flatten(args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.hasErrorText" id="apidoc.element.spacejam.Meteor.prototype.hasErrorText">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>hasErrorText
+        <span class="apidocSignatureSpan">(buffer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasErrorText = function (buffer) {
+  if (buffer.lastIndexOf(this.defaultOptions()[&#x22;meteor-error-text&#x22;]) !== -1) {
+    return this.emit(&#x22;error&#x22;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.hasMongodb" id="apidoc.element.spacejam.Meteor.prototype.hasMongodb">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>hasMongodb
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasMongodb = function () {
+  log.debug(&#x22;Meteor.hasMongodb()&#x22;);
+  if (this.mongodb) {
+    return this.mongodb.hasMongodb();
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return _this.kill();
+    };
+  })(this));
+  this.findAllChildren();
+}
+
+MeteorMongodb.prototype.hasMongodb = function() {
+  log.debug(&#x22;MeteorMongodb.<span class="apidocCodeKeywordSpan">hasMongodb</span>()&#x22;);
+  return this.mongodChilds.length &#x3e; 0;
+};
+
+MeteorMongodb.prototype.findAllChildren = function() {
+  log.debug(&#x22;MeteorMongodb.findAllChildren()&#x22;, arguments);
+  log.debug(&#x22;@meteorPid&#x22;, this.meteorPid);
+  return ps.lookup({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.hasReadyText" id="apidoc.element.spacejam.Meteor.prototype.hasReadyText">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>hasReadyText
+        <span class="apidocSignatureSpan">(buffer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasReadyText = function (buffer) {
+  if (buffer.lastIndexOf(this.defaultOptions()[&#x22;meteor-ready-text&#x22;]) !== -1) {
+    return this.emit(&#x22;ready&#x22;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.hasStartedMongoDBText" id="apidoc.element.spacejam.Meteor.prototype.hasStartedMongoDBText">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>hasStartedMongoDBText
+        <span class="apidocSignatureSpan">(buffer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasStartedMongoDBText = function (buffer) {
+  if (buffer.lastIndexOf(&#x27;Started MongoDB&#x27;) !== -1) {
+    this.mongodb = new MeteorMongodb(this.childProcess.child.pid);
+    return this.emit(&#x22;mongodb ready&#x22;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.kill" id="apidoc.element.spacejam.Meteor.prototype.kill">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>kill
+        <span class="apidocSignatureSpan">(signal)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">kill = function (signal) {
+  var _ref, _ref1;
+  if (signal == null) {
+    signal = &#x22;SIGTERM&#x22;;
+  }
+  log.debug(&#x22;Meteor.kill()&#x22;, arguments, &#x22;@childProcess?=&#x22;, this.childProcess != null, &#x22;@mongodb?=&#x22;, this.mongodb != null);
+  if ((_ref = this.childProcess) != null) {
+    _ref.kill(signal);
+  }
+  return (_ref1 = this.mongodb) != null ? _ref1.kill() : void 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  expect(pipeClassOptions, &#x22;Invalid pipeClassOptions&#x22;).to.be.an(&#x27;object&#x27;);
+}
+this.command = path.basename(command);
+log.info(&#x22;spacejam: spawning &#x22; + this.command);
+process.on(&#x27;exit&#x27;, (function(_this) {
+  return function(code) {
+    log.debug(&#x22;ChildProcess.process.on &#x27;exit&#x27;: @command=&#x22; + _this.command + &#x22; @killed=&#x22; + _this.killed
+ + &#x22; code=&#x22; + code);
+    return _this.<span class="apidocCodeKeywordSpan">kill</span>();
+  };
+})(this));
+this.child = ChildProcess._spawn(command, args, options);
+if (pipeClass) {
+  this.pipe = new pipeClass(this.child.stdout, this.child.stderr, pipeClassOptions);
+} else {
+  this.pipe = new Pipe(this.child.stdout, this.child.stderr);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.runTestCommand" id="apidoc.element.spacejam.Meteor.prototype.runTestCommand">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>runTestCommand
+        <span class="apidocSignatureSpan">(command, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">runTestCommand = function (command, options) {
+  var args, cwd, env;
+  if (options == null) {
+    options = {};
+  }
+  log.debug(&#x22;Meteor.runTestCommand()&#x22;, arguments);
+  expect(options, &#x22;options should be an object.&#x22;).to.be.an(&#x22;object&#x22;);
+  expect(this.childProcess, &#x22;Meteor&#x27;s child process is already running&#x22;).to.be[&#x22;null&#x22;];
+  this.options = _.extend(this.defaultOptions(), options);
+  log.debug(&#x27;meteor options:&#x27;, this.options);
+  cwd = path.resolve(this.options.dir);
+  log.debug(&#x22;meteor cwd=&#x22; + cwd);
+  expect(this.options[&#x27;driver-package&#x27;], &#x22;options.driver-package is missing&#x22;).to.be.ok;
+  args = this.getTestArgs(command, this.options);
+  log.debug(&#x27;meteor args=&#x27;, args);
+  env = _.clone(process.env);
+  env.METEOR_TEST_PACKAGES = &#x27;1&#x27;;
+  env.ROOT_URL = this.options[&#x22;root-url&#x22;];
+  if (this.options[&#x22;mongo-url&#x22;]) {
+    env.MONGO_URL = this.options[&#x22;mongo-url&#x22;];
+  } else {
+    if (env.MONGO_URL != null) {
+      delete env.MONGO_URL;
+    }
+  }
+  options = {
+    cwd: cwd,
+    env: env,
+    detached: false
+  };
+  this.childProcess = new ChildProcess();
+  this.childProcess.spawn(&#x22;meteor&#x22;, args, options);
+  this.childProcess.child.on(&#x22;exit&#x22;, (function(_this) {
+    return function(code, signal) {
+      return _this.emit(&#x22;exit&#x22;, code, signal);
+    };
+  })(this));
+  this.childProcess.child.stdout.on(&#x22;data&#x22;, (function(_this) {
+    return function(data) {
+      _this.buffer.stdout += data;
+      _this.hasStartedMongoDBText(data);
+      _this.hasErrorText(data);
+      return _this.hasReadyText(data);
+    };
+  })(this));
+  return this.childProcess.child.stderr.on(&#x22;data&#x22;, (function(_this) {
+    return function(data) {
+      _this.buffer.stderr += data;
+      return _this.hasErrorText(data);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.testApp" id="apidoc.element.spacejam.Meteor.prototype.testApp">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>testApp
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">testApp = function (options) {
+  if (options == null) {
+    options = {};
+  }
+  log.debug(&#x22;Meteor.testApp()&#x22;, arguments);
+  return this.runTestCommand(&#x22;test&#x22;, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Meteor.prototype.testPackages" id="apidoc.element.spacejam.Meteor.prototype.testPackages">
+        function <span class="apidocSignatureSpan">spacejam.Meteor.prototype.</span>testPackages
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">testPackages = function (options) {
+  if (options == null) {
+    options = {};
+  }
+  log.debug(&#x22;Meteor.testPackages()&#x22;, arguments);
+  return this.runTestCommand(&#x22;test-packages&#x22;, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.MeteorMongodb" id="apidoc.module.spacejam.MeteorMongodb">module spacejam.MeteorMongodb</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb.MeteorMongodb" id="apidoc.element.spacejam.MeteorMongodb.MeteorMongodb">
+        function <span class="apidocSignatureSpan">spacejam.</span>MeteorMongodb
+        <span class="apidocSignatureSpan">(meteorPid)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MeteorMongodb(meteorPid) {
+  this.meteorPid = meteorPid;
+  log.debug(&#x22;MeteorMongodb.constructor()&#x22;, arguments);
+  process.on(&#x27;exit&#x27;, (function(_this) {
+    return function(code) {
+      log.debug(&#x22;MeteorMongodb.process.on &#x27;exit&#x27;: code=&#x22; + code);
+      return _this.kill();
+    };
+  })(this));
+  this.findAllChildren();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb.EventEmitter" id="apidoc.element.spacejam.MeteorMongodb.EventEmitter">
+        function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>EventEmitter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb.init" id="apidoc.element.spacejam.MeteorMongodb.init">
+        function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this.domain = null;
+  if (EventEmitter.usingDomains) {
+    // if there is an active domain, then attach to it.
+    domain = domain || require(&#x27;domain&#x27;);
+    if (domain.active &#x26;&#x26; !(this instanceof domain.Domain)) {
+      this.domain = domain.active;
+    }
+  }
+
+  if (!this._events || this._events === Object.getPrototypeOf(this)._events) {
+    this._events = new EventHandlers();
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb.listenerCount" id="apidoc.element.spacejam.MeteorMongodb.listenerCount">
+        function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.</span>listenerCount
+        <span class="apidocSignatureSpan">(emitter, type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listenerCount = function (emitter, type) {
+  if (typeof emitter.listenerCount === &#x27;function&#x27;) {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.MeteorMongodb.prototype" id="apidoc.module.spacejam.MeteorMongodb.prototype">module spacejam.MeteorMongodb.prototype</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb.prototype.constructor" id="apidoc.element.spacejam.MeteorMongodb.prototype.constructor">
+        function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(meteorPid)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MeteorMongodb(meteorPid) {
+  this.meteorPid = meteorPid;
+  log.debug(&#x22;MeteorMongodb.constructor()&#x22;, arguments);
+  process.on(&#x27;exit&#x27;, (function(_this) {
+    return function(code) {
+      log.debug(&#x22;MeteorMongodb.process.on &#x27;exit&#x27;: code=&#x22; + code);
+      return _this.kill();
+    };
+  })(this));
+  this.findAllChildren();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ChildProcess.prototype.pipe = null;
+
+ChildProcess.prototype.command = null;
+
+ChildProcess.prototype.killed = false;
+
+function ChildProcess() {
+  log.debug(&#x22;ChildProcess.<span class="apidocCodeKeywordSpan">constructor</span>()&#x22;);
+}
+
+ChildProcess.prototype.exec = function(command, options, cb) {
+  var innerCB;
+  log.debug(&#x22;ChildProcess.exec()&#x22;, arguments);
+  expect(this.child).to.be[&#x22;null&#x22;];
+  expect(command).to.be.a(&#x27;string&#x27;).that.is.ok;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb.prototype.findAllChildren" id="apidoc.element.spacejam.MeteorMongodb.prototype.findAllChildren">
+        function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>findAllChildren
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findAllChildren = function () {
+  log.debug(&#x22;MeteorMongodb.findAllChildren()&#x22;, arguments);
+  log.debug(&#x22;@meteorPid&#x22;, this.meteorPid);
+  return ps.lookup({
+    command: &#x27;mongod&#x27;,
+    psargs: &#x27;-l&#x27;,
+    ppid: this.meteorPid
+  }, (function(_this) {
+    return function(err, resultList) {
+      _this.mongodChilds = resultList;
+      if (err) {
+        return log.warn(&#x22;spacjam: Warning: Couldn&#x27;t find any mongod children:\n&#x22;, err);
+      } else if (resultList.length &#x3e; 1) {
+        return log.warn(&#x22;spacjam: Warning: Found more than one mongod child:\n&#x22;, resultList);
+      } else {
+        return log.debug(&#x22;Found meteor mongod child with pid: &#x22;, resultList[0].pid);
+      }
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  log.debug(&#x22;MeteorMongodb.constructor()&#x22;, arguments);
+  process.on(&#x27;exit&#x27;, (function(_this) {
+    return function(code) {
+      log.debug(&#x22;MeteorMongodb.process.on &#x27;exit&#x27;: code=&#x22; + code);
+      return _this.kill();
+    };
+  })(this));
+  this.<span class="apidocCodeKeywordSpan">findAllChildren</span>();
+}
+
+MeteorMongodb.prototype.hasMongodb = function() {
+  log.debug(&#x22;MeteorMongodb.hasMongodb()&#x22;);
+  return this.mongodChilds.length &#x3e; 0;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb.prototype.hasMongodb" id="apidoc.element.spacejam.MeteorMongodb.prototype.hasMongodb">
+        function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>hasMongodb
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasMongodb = function () {
+  log.debug(&#x22;MeteorMongodb.hasMongodb()&#x22;);
+  return this.mongodChilds.length &#x3e; 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return _this.kill();
+    };
+  })(this));
+  this.findAllChildren();
+}
+
+MeteorMongodb.prototype.hasMongodb = function() {
+  log.debug(&#x22;MeteorMongodb.<span class="apidocCodeKeywordSpan">hasMongodb</span>()&#x22;);
+  return this.mongodChilds.length &#x3e; 0;
+};
+
+MeteorMongodb.prototype.findAllChildren = function() {
+  log.debug(&#x22;MeteorMongodb.findAllChildren()&#x22;, arguments);
+  log.debug(&#x22;@meteorPid&#x22;, this.meteorPid);
+  return ps.lookup({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.MeteorMongodb.prototype.kill" id="apidoc.element.spacejam.MeteorMongodb.prototype.kill">
+        function <span class="apidocSignatureSpan">spacejam.MeteorMongodb.prototype.</span>kill
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">kill = function () {
+  var attempts, interval, onInterval;
+  log.debug(&#x22;MeteorMongodb.kill() killed=&#x22;, this.killed);
+  if (this.killed) {
+    return;
+  }
+  this.killed = true;
+  attempts = 1;
+  interval = null;
+  onInterval = (function(_this) {
+    return function() {
+      var allDead, e, mongod, signal, _i, _j, _len, _len1, _ref, _ref1;
+      if (attempts &#x3c;= 40) {
+        signal = 0;
+        if (attempts === 1) {
+          signal = &#x22;SIGTERM&#x22;;
+        } else if (attempts === 20) {
+          signal = &#x22;SIGKILL&#x22;;
+        }
+        try {
+          _ref = _this.mongodChilds;
+          for (_i = 0, _len = _ref.length; _i &#x3c; _len; _i++) {
+            mongod = _ref[_i];
+            if (mongod.dead == null) {
+              try {
+                process.kill(mongod.pid, signal);
+              } catch (_error) {
+                e = _error;
+                mongod.dead = true;
+              }
+            }
+          }
+          allDead = true;
+          _ref1 = _this.mongodChilds;
+          for (_j = 0, _len1 = _ref1.length; _j &#x3c; _len1; _j++) {
+            mongod = _ref1[_j];
+            if (mongod.dead == null) {
+              allDead = false;
+              return;
+            }
+          }
+          if (allDead) {
+            clearInterval(interval);
+            _this.emit(&#x22;kill-done&#x22;, null, _this.mongodChilds);
+          }
+        } catch (_error) {}
+        return attempts++;
+      } else {
+        clearInterval(interval);
+        log.error(&#x22;spacejam: Error: Unable to kill all mongodb children, even after 40 attempts&#x22;);
+        return _this.emit(&#x22;kill-done&#x22;, new Error(&#x22;Unable to kill all mongodb children, even after 40 attempts&#x22;), _this.mongodChilds
+);
+      }
+    };
+  })(this);
+  onInterval();
+  return interval = setInterval(onInterval, 100);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  expect(pipeClassOptions, &#x22;Invalid pipeClassOptions&#x22;).to.be.an(&#x27;object&#x27;);
+}
+this.command = path.basename(command);
+log.info(&#x22;spacejam: spawning &#x22; + this.command);
+process.on(&#x27;exit&#x27;, (function(_this) {
+  return function(code) {
+    log.debug(&#x22;ChildProcess.process.on &#x27;exit&#x27;: @command=&#x22; + _this.command + &#x22; @killed=&#x22; + _this.killed
+ + &#x22; code=&#x22; + code);
+    return _this.<span class="apidocCodeKeywordSpan">kill</span>();
+  };
+})(this));
+this.child = ChildProcess._spawn(command, args, options);
+if (pipeClass) {
+  this.pipe = new pipeClass(this.child.stdout, this.child.stderr, pipeClassOptions);
+} else {
+  this.pipe = new Pipe(this.child.stdout, this.child.stderr);
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.Phantomjs" id="apidoc.module.spacejam.Phantomjs">module spacejam.Phantomjs</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Phantomjs.Phantomjs" id="apidoc.element.spacejam.Phantomjs.Phantomjs">
+        function <span class="apidocSignatureSpan">spacejam.</span>Phantomjs
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Phantomjs() {
+  this.run = __bind(this.run, this);
+  return Phantomjs.__super__.constructor.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Phantomjs.EventEmitter" id="apidoc.element.spacejam.Phantomjs.EventEmitter">
+        function <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>EventEmitter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Phantomjs.init" id="apidoc.element.spacejam.Phantomjs.init">
+        function <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this.domain = null;
+  if (EventEmitter.usingDomains) {
+    // if there is an active domain, then attach to it.
+    domain = domain || require(&#x27;domain&#x27;);
+    if (domain.active &#x26;&#x26; !(this instanceof domain.Domain)) {
+      this.domain = domain.active;
+    }
+  }
+
+  if (!this._events || this._events === Object.getPrototypeOf(this)._events) {
+    this._events = new EventHandlers();
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Phantomjs.listenerCount" id="apidoc.element.spacejam.Phantomjs.listenerCount">
+        function <span class="apidocSignatureSpan">spacejam.Phantomjs.</span>listenerCount
+        <span class="apidocSignatureSpan">(emitter, type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listenerCount = function (emitter, type) {
+  if (typeof emitter.listenerCount === &#x27;function&#x27;) {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.Phantomjs.prototype" id="apidoc.module.spacejam.Phantomjs.prototype">module spacejam.Phantomjs.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Phantomjs.prototype.constructor" id="apidoc.element.spacejam.Phantomjs.prototype.constructor">
+        function <span class="apidocSignatureSpan">spacejam.Phantomjs.prototype.</span>constructor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Phantomjs() {
+  this.run = __bind(this.run, this);
+  return Phantomjs.__super__.constructor.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ChildProcess.prototype.pipe = null;
+
+ChildProcess.prototype.command = null;
+
+ChildProcess.prototype.killed = false;
+
+function ChildProcess() {
+  log.debug(&#x22;ChildProcess.<span class="apidocCodeKeywordSpan">constructor</span>()&#x22;);
+}
+
+ChildProcess.prototype.exec = function(command, options, cb) {
+  var innerCB;
+  log.debug(&#x22;ChildProcess.exec()&#x22;, arguments);
+  expect(this.child).to.be[&#x22;null&#x22;];
+  expect(command).to.be.a(&#x27;string&#x27;).that.is.ok;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Phantomjs.prototype.kill" id="apidoc.element.spacejam.Phantomjs.prototype.kill">
+        function <span class="apidocSignatureSpan">spacejam.Phantomjs.prototype.</span>kill
+        <span class="apidocSignatureSpan">(signal)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">kill = function (signal) {
+  var _ref;
+  if (signal == null) {
+    signal = &#x22;SIGTERM&#x22;;
+  }
+  log.debug(&#x22;Phantomjs.kill()&#x22;);
+  return (_ref = this.childProcess) != null ? _ref.kill(signal) : void 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  expect(pipeClassOptions, &#x22;Invalid pipeClassOptions&#x22;).to.be.an(&#x27;object&#x27;);
+}
+this.command = path.basename(command);
+log.info(&#x22;spacejam: spawning &#x22; + this.command);
+process.on(&#x27;exit&#x27;, (function(_this) {
+  return function(code) {
+    log.debug(&#x22;ChildProcess.process.on &#x27;exit&#x27;: @command=&#x22; + _this.command + &#x22; @killed=&#x22; + _this.killed
+ + &#x22; code=&#x22; + code);
+    return _this.<span class="apidocCodeKeywordSpan">kill</span>();
+  };
+})(this));
+this.child = ChildProcess._spawn(command, args, options);
+if (pipeClass) {
+  this.pipe = new pipeClass(this.child.stdout, this.child.stderr, pipeClassOptions);
+} else {
+  this.pipe = new Pipe(this.child.stdout, this.child.stderr);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Phantomjs.prototype.run" id="apidoc.element.spacejam.Phantomjs.prototype.run">
+        function <span class="apidocSignatureSpan">spacejam.Phantomjs.prototype.</span>run
+        <span class="apidocSignatureSpan">(url, options, script, pipeClass, pipeClassOptions, useSystemPhantomjs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">run = function (url, options, script, pipeClass, pipeClassOptions, useSystemPhantomjs) {
+  var env, spawnArgs, spawnOptions;
+  if (options == null) {
+    options = &#x27;--load-images=no --ssl-protocol=TLSv1&#x27;;
+  }
+  if (script == null) {
+    script = &#x22;phantomjs-test-in-console.js&#x22;;
+  }
+  if (pipeClass == null) {
+    pipeClass = void 0;
+  }
+  if (pipeClassOptions == null) {
+    pipeClassOptions = void 0;
+  }
+  if (useSystemPhantomjs == null) {
+    useSystemPhantomjs = false;
+  }
+  log.debug(&#x22;Phantomjs.run()&#x22;, arguments);
+  expect(this.childProcess, &#x22;ChildProcess is already running&#x22;).to.be[&#x22;null&#x22;];
+  expect(url, &#x22;Invalid url&#x22;).to.be.a(&#x27;string&#x27;);
+  expect(options, &#x22;Invalid options&#x22;).to.be.a(&#x27;string&#x27;);
+  expect(script, &#x22;Invalid script&#x22;).to.be.a(&#x27;string&#x27;);
+  if (pipeClass != null) {
+    expect(pipeClass, &#x22;Invalid pipeClass&#x22;).to.be.a(&#x27;function&#x27;);
+  }
+  if (pipeClassOptions != null) {
+    expect(pipeClassOptions, &#x22;Invalid pipeClassOptions&#x22;).to.be.an(&#x27;object&#x27;);
+  }
+  expect(useSystemPhantomjs, &#x22;Invalid useSystemPhantomjs&#x22;).to.be.a(&#x27;boolean&#x27;);
+  env = _.extend(process.env, {
+    ROOT_URL: url
+  });
+  log.debug(&#x22;script=&#x22; + __dirname + &#x22;/&#x22; + script);
+  spawnArgs = options.split(&#x27; &#x27;);
+  spawnArgs.push(script);
+  log.debug(&#x27;spawnArgs:&#x27;, spawnArgs);
+  spawnOptions = {
+    cwd: __dirname,
+    detached: false,
+    env: env
+  };
+  log.debug(&#x27;spawnOptions:&#x27;, spawnOptions);
+  if (useSystemPhantomjs) {
+    process.env.PATH = DEFAULT_PATH;
+  } else {
+    process.env.PATH = path.dirname(phantomjs.path) + &#x27;:&#x27; + DEFAULT_PATH;
+  }
+  this.childProcess = new ChildProcess();
+  this.childProcess.spawn(&#x22;phantomjs&#x22;, spawnArgs, spawnOptions, pipeClass, pipeClassOptions);
+  return this.childProcess.child.on(&#x22;exit&#x22;, (function(_this) {
+    return function(code, signal) {
+      return _this.emit(&#x22;exit&#x22;, code, signal);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.Spacejam" id="apidoc.module.spacejam.Spacejam">module spacejam.Spacejam</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.Spacejam" id="apidoc.element.spacejam.Spacejam.Spacejam">
+        function <span class="apidocSignatureSpan">spacejam.</span>Spacejam
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Spacejam() {
+  this.onMeteorMongodbKillDone = __bind(this.onMeteorMongodbKillDone, this);
+  log.debug(&#x22;Spacejam.constructor()&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.EventEmitter" id="apidoc.element.spacejam.Spacejam.EventEmitter">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.</span>EventEmitter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.get" id="apidoc.element.spacejam.Spacejam.get">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.</span>get
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function () {
+  return instance != null ? instance : instance = new Spacejam();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.init" id="apidoc.element.spacejam.Spacejam.init">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this.domain = null;
+  if (EventEmitter.usingDomains) {
+    // if there is an active domain, then attach to it.
+    domain = domain || require(&#x27;domain&#x27;);
+    if (domain.active &#x26;&#x26; !(this instanceof domain.Domain)) {
+      this.domain = domain.active;
+    }
+  }
+
+  if (!this._events || this._events === Object.getPrototypeOf(this)._events) {
+    this._events = new EventHandlers();
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.listenerCount" id="apidoc.element.spacejam.Spacejam.listenerCount">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.</span>listenerCount
+        <span class="apidocSignatureSpan">(emitter, type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listenerCount = function (emitter, type) {
+  if (typeof emitter.listenerCount === &#x27;function&#x27;) {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.Spacejam.prototype" id="apidoc.module.spacejam.Spacejam.prototype">module spacejam.Spacejam.prototype</a></h1>
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.prototype.constructor" id="apidoc.element.spacejam.Spacejam.prototype.constructor">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>constructor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Spacejam() {
+  this.onMeteorMongodbKillDone = __bind(this.onMeteorMongodbKillDone, this);
+  log.debug(&#x22;Spacejam.constructor()&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ChildProcess.prototype.pipe = null;
+
+ChildProcess.prototype.command = null;
+
+ChildProcess.prototype.killed = false;
+
+function ChildProcess() {
+  log.debug(&#x22;ChildProcess.<span class="apidocCodeKeywordSpan">constructor</span>()&#x22;);
+}
+
+ChildProcess.prototype.exec = function(command, options, cb) {
+  var innerCB;
+  log.debug(&#x22;ChildProcess.exec()&#x22;, arguments);
+  expect(this.child).to.be[&#x22;null&#x22;];
+  expect(command).to.be.a(&#x27;string&#x27;).that.is.ok;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.prototype.defaultOptions" id="apidoc.element.spacejam.Spacejam.prototype.defaultOptions">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>defaultOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultOptions = function () {
+  return {
+    &#x27;phantomjs-script&#x27;: &#x27;phantomjs-test-in-console.js&#x27;,
+    &#x27;phantomjs-options&#x27;: &#x27;--load-images=no --ssl-protocol=TLSv1&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.prototype.done" id="apidoc.element.spacejam.Spacejam.prototype.done">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>done
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">done = function (code) {
+  var _ref;
+  log.debug(&#x22;Spacejam.done()&#x22;, arguments);
+  expect(code, &#x22;Invalid done code&#x22;).to.be.a(&#x22;number&#x22;);
+  log.debug(&#x27;Spacejam.done() @meteor?=&#x27; + (this.meteor != null));
+  this.waitForMeteorMongodbKillDone = (_ref = this.meteor) != null ? _ref.hasMongodb() : void 0;
+  log.debug(&#x27;Spacejam.done() @waitForMeteorMongodbKillDone=&#x27; + this.waitForMeteorMongodbKillDone);
+  if (!this.waitForMeteorMongodbKillDone) {
+    this.emit(&#x22;done&#x22;, code);
+  }
+  log.debug(&#x27;Spacejam.done() waiting for mongodb to exit before calling done&#x27;);
+  return this.doneCode = code;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.prototype.killChildren" id="apidoc.element.spacejam.Spacejam.prototype.killChildren">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>killChildren
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">killChildren = function (code) {
+  var _ref, _ref1;
+  if (code == null) {
+    code = 1;
+  }
+  log.debug(&#x22;Spacejam.killChildren()&#x22;, arguments);
+  expect(code, &#x22;Invalid exit code&#x22;).to.be.a(&#x22;number&#x22;);
+  if (!this.childrenKilled) {
+    if ((_ref = this.meteor) != null) {
+      _ref.kill();
+    }
+    if ((_ref1 = this.phantomjs) != null) {
+      _ref1.kill();
+    }
+  }
+  this.childrenKilled = true;
+  return this.done(code);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  this.onProcessExit = __bind(this.onProcessExit, this);
+  this.spacejam = new Spacejam();
+  log.debug(&#x22;CLI.constructor()&#x22;);
+  process.on(&#x27;SIGPIPE&#x27;, (function(_this) {
+    return function(code) {
+      var _ref;
+      log.info(&#x22;spacejam: Received a SIGPIPE signal. Killing all child processes...&#x22;);
+      return (_ref = _this.spacejam) != null ? _ref.<span class="apidocCodeKeywordSpan">killChildren</span>() : void 0;
+    };
+  })(this));
+}
+
+CLI.prototype.onProcessExit = function(code) {
+  var err;
+  log.info(&#x22;spacejam: spacejam is exiting with code &#x22; + code + &#x22;, deleting pid file.&#x22;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.prototype.onMeteorMongodbKillDone" id="apidoc.element.spacejam.Spacejam.prototype.onMeteorMongodbKillDone">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>onMeteorMongodbKillDone
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onMeteorMongodbKillDone = function () {
+  log.debug(&#x22;Spacejam.onMeteorMongodbKillDone()&#x22;, this.doneCode);
+  return this.emit(&#x22;done&#x22;, this.doneCode);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.prototype.runPhantom" id="apidoc.element.spacejam.Spacejam.prototype.runPhantom">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>runPhantom
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">runPhantom = function () {
+  var pipeClass, pipeClassOptions, url;
+  log.debug(&#x22;Spacejam.runPhantom()&#x22;);
+  expect(this.phantomjs).to.be.ok;
+  expect(this.meteor.options[&#x22;root-url&#x22;]).to.be.ok;
+  expect(this.options[&#x22;phantomjs-options&#x22;]).to.be.ok;
+  expect(this.options[&#x22;phantomjs-script&#x22;]).to.be.ok;
+  url = this.meteor.options[&#x22;root-url&#x22;];
+  if (this.options[&#x27;xunit-out&#x27;] != null) {
+    url += &#x27;xunit&#x27;;
+    pipeClass = XunitFilePipe;
+    pipeClassOptions = {
+      pipeToFile: this.options[&#x27;xunit-out&#x27;]
+    };
+  } else {
+    url += &#x27;local&#x27;;
+  }
+  this.phantomjs.on(&#x22;exit&#x22;, (function(_this) {
+    return function(code, signal) {
+      var _ref;
+      _this.phantomjs = null;
+      if ((_ref = _this.meteor) != null) {
+        _ref.kill();
+      }
+      if (code != null) {
+        return _this.done(code);
+      }
+    };
+  })(this));
+  return this.phantomjs.run(url, this.options[&#x27;phantomjs-options&#x27;], this.options[&#x27;phantomjs-script&#x27;], pipeClass, pipeClassOptions
+, this.options[&#x27;use-system-phantomjs&#x27;] != null);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.Spacejam.prototype.runTests" id="apidoc.element.spacejam.Spacejam.prototype.runTests">
+        function <span class="apidocSignatureSpan">spacejam.Spacejam.prototype.</span>runTests
+        <span class="apidocSignatureSpan">(command, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">runTests = function (command, options) {
+  var err;
+  if (options == null) {
+    options = {};
+  }
+  log.debug(&#x22;Spacejam.testPackages()&#x22;, options);
+  expect(options).to.be.an(&#x22;object&#x22;);
+  expect(command).to.be.a(&#x22;string&#x22;);
+  if (options.timeout != null) {
+    expect(options.timeout).to.be.a(&#x27;number&#x27;);
+  }
+  if (options[&#x27;crash-spacejam-after&#x27;] != null) {
+    expect(options[&#x27;crash-spacejam-after&#x27;]).to.be.a(&#x27;number&#x27;);
+  }
+  expect(this.meteor, &#x22;Meteor is already running&#x22;).to.be[&#x22;null&#x22;];
+  this.options = _.extend(this.defaultOptions(), options);
+  log.debug(this.options);
+  try {
+    this.meteor = new Meteor();
+    this.phantomjs = new Phantomjs();
+  } catch (_error) {
+    err = _error;
+    console.trace(err);
+    this.emit(&#x22;done&#x22;, 1);
+    return;
+  }
+  this.meteor.on(&#x22;exit&#x22;, (function(_this) {
+    return function(code) {
+      log.debug(&#x22;Spacejam.meteor.on &#x27;exit&#x27;:&#x22;, arguments);
+      _this.meteor = null;
+      if (code) {
+        return _this.killChildren(Spacejam.DONE.METEOR_ERROR);
+      }
+    };
+  })(this));
+  this.meteor.on(&#x22;mongodb ready&#x22;, (function(_this) {
+    return function() {
+      log.info(&#x22;spacejam: meteor mongodb is ready&#x22;);
+      _this.waitForMeteorMongodbKillDone = true;
+      return _this.meteor.mongodb.on(&#x22;kill-done&#x22;, _this.onMeteorMongodbKillDone);
+    };
+  })(this));
+  this.meteor.on(&#x22;ready&#x22;, (function(_this) {
+    return function() {
+      var pipeClass, scriptArgs, spawnOptions;
+      log.info(&#x22;spacejam: meteor is ready&#x22;);
+      scriptArgs = &#x27;&#x27;;
+      pipeClass = null;
+      spawnOptions = {};
+      return _this.runPhantom();
+    };
+  })(this));
+  this.meteor.on(&#x22;error&#x22;, (function(_this) {
+    return function() {
+      log.error(&#x22;spacejam: meteor has errors&#x22;);
+      if (!_this.options.watch) {
+        return _this.killChildren(Spacejam.DONE.METEOR_ERROR);
+      }
+    };
+  })(this));
+  try {
+    this.meteor.runTestCommand(command, this.options);
+  } catch (_error) {
+    err = _error;
+    console.trace(err);
+    this.emit(&#x22;done&#x22;, 1);
+    return;
+  }
+  if ((this.options.timeout != null) &#x26;&#x26; +this.options.timeout &#x3e; 0) {
+    setTimeout((function(_this) {
+      return function() {
+        log.error(&#x22;spacejam: Error: tests timed out after &#x22; + options.timeout + &#x22; milliseconds.&#x22;);
+        return _this.killChildren(Spacejam.DONE.TEST_TIMEOUT);
+      };
+    })(this), +options.timeout);
+  }
+  if ((this.options[&#x27;crash-spacejam-after&#x27;] != null) &#x26;&#x26; +this.options[&#x27;crash-spacejam-after&#x27;] &#x3e; 0) {
+    return setTimeout((function(_this) {
+      return function() {
+        throw new Error(&#x22;Testing spacejam crashing.&#x22;);
+      };
+    })(this), +options[&#x27;crash-spacejam-after&#x27;]);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        exitMsg = &#x22;spacejam: Unknown error with exit code &#x27;&#x22; + code + &#x22;&#x27;. Exiting.&#x22;;
+      }
+      log.error(exitMsg);
+      return process.exit(code);
+    };
+  })(this));
+  try {
+    return this.spacejam.<span class="apidocCodeKeywordSpan">runTests</span>(command, this.options);
+  } catch (_error) {
+    err = _error;
+    console.trace(err);
+    log.error(&#x22;spacejam: Usage or initialization error. Exiting.&#x22;);
+    return process.exit(1);
+  }
+};
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.XunitFilePipe" id="apidoc.module.spacejam.XunitFilePipe">module spacejam.XunitFilePipe</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.XunitFilePipe.XunitFilePipe" id="apidoc.element.spacejam.XunitFilePipe.XunitFilePipe">
+        function <span class="apidocSignatureSpan">spacejam.</span>XunitFilePipe
+        <span class="apidocSignatureSpan">(stdout, stderr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function XunitFilePipe(stdout, stderr, options) {
+  var outputFile, outputStream;
+  this.stdout = stdout;
+  this.stderr = stderr;
+  this.options = options;
+  this.stdout.setEncoding(&#x22;utf8&#x22;);
+  this.stderr.setEncoding(&#x22;utf8&#x22;);
+  outputFile = this.options.pipeToFile;
+  outputStream = fs.createWriteStream(outputFile, {
+    flags: &#x27;w&#x27;,
+    encoding: &#x27;utf8&#x27;
+  });
+  this.stdoutBuffer = &#x27;&#x27;;
+  this.stdout.on(&#x22;data&#x22;, (function(_this) {
+    return function(data) {
+      var line, lines, _i, _len, _results;
+      _this.stdoutBuffer += data;
+      lines = _this.stdoutBuffer.split(&#x27;\n&#x27;);
+      if (lines.length === 1) {
+        return;
+      }
+      _this.stdoutBuffer = lines.pop();
+      _results = [];
+      for (_i = 0, _len = lines.length; _i &#x3c; _len; _i++) {
+        line = lines[_i];
+        if (line.indexOf(&#x27;##_meteor_magic##xunit: &#x27;) === 0) {
+          _results.push(outputStream.write(line.substr(24) + &#x27;\n&#x27;));
+        } else {
+          _results.push(process.stdout.write(line + &#x27;\n&#x27;));
+        }
+      }
+      return _results;
+    };
+  })(this));
+  this.stderr.on(&#x22;data&#x22;, (function(_this) {
+    return function(data) {
+      return process.stderr.write(data);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spacejam.XunitFilePipe.prototype" id="apidoc.module.spacejam.XunitFilePipe.prototype">module spacejam.XunitFilePipe.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spacejam.XunitFilePipe.prototype.constructor" id="apidoc.element.spacejam.XunitFilePipe.prototype.constructor">
+        function <span class="apidocSignatureSpan">spacejam.XunitFilePipe.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(stdout, stderr, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function XunitFilePipe(stdout, stderr, options) {
+  var outputFile, outputStream;
+  this.stdout = stdout;
+  this.stderr = stderr;
+  this.options = options;
+  this.stdout.setEncoding(&#x22;utf8&#x22;);
+  this.stderr.setEncoding(&#x22;utf8&#x22;);
+  outputFile = this.options.pipeToFile;
+  outputStream = fs.createWriteStream(outputFile, {
+    flags: &#x27;w&#x27;,
+    encoding: &#x27;utf8&#x27;
+  });
+  this.stdoutBuffer = &#x27;&#x27;;
+  this.stdout.on(&#x22;data&#x22;, (function(_this) {
+    return function(data) {
+      var line, lines, _i, _len, _results;
+      _this.stdoutBuffer += data;
+      lines = _this.stdoutBuffer.split(&#x27;\n&#x27;);
+      if (lines.length === 1) {
+        return;
+      }
+      _this.stdoutBuffer = lines.pop();
+      _results = [];
+      for (_i = 0, _len = lines.length; _i &#x3c; _len; _i++) {
+        line = lines[_i];
+        if (line.indexOf(&#x27;##_meteor_magic##xunit: &#x27;) === 0) {
+          _results.push(outputStream.write(line.substr(24) + &#x27;\n&#x27;));
+        } else {
+          _results.push(process.stdout.write(line + &#x27;\n&#x27;));
+        }
+      }
+      return _results;
+    };
+  })(this));
+  this.stderr.on(&#x22;data&#x22;, (function(_this) {
+    return function(data) {
+      return process.stderr.write(data);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ChildProcess.prototype.pipe = null;
+
+ChildProcess.prototype.command = null;
+
+ChildProcess.prototype.killed = false;
+
+function ChildProcess() {
+  log.debug(&#x22;ChildProcess.<span class="apidocCodeKeywordSpan">constructor</span>()&#x22;);
+}
+
+ChildProcess.prototype.exec = function(command, options, cb) {
+  var innerCB;
+  log.debug(&#x22;ChildProcess.exec()&#x22;, arguments);
+  expect(this.child).to.be[&#x22;null&#x22;];
+  expect(command).to.be.a(&#x27;string&#x27;).that.is.ok;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
